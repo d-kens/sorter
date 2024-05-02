@@ -1,11 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const Sorter_1 = require("./Sorter");
-const NumbersCollection_1 = require("./NumbersCollection");
-const numbersCollection = new NumbersCollection_1.NumbersCollection([100, 3, -5, 0, -1, 43, 122]);
-const sorter = new Sorter_1.Sorter(numbersCollection);
+const CharactersCollection_1 = require("./CharactersCollection");
+// const numbersCollection = new NumbersCollection([100, 3, -5, 0, -1, 43, 122])
+// const sorter = new Sorter(numbersCollection);
+// sorter.sort();
+// console.log(numbersCollection.data );
+const charactersCollection = new CharactersCollection_1.CharactersCollection('OIUYTRWfcvbknjnbvarwthyjuk');
+const sorter = new Sorter_1.Sorter(charactersCollection);
 sorter.sort();
-console.log(numbersCollection.data);
+console.log(charactersCollection);
 /*
 - The sorter class need to be generic so that it can different types of collections: array of numbers, string of characters, list
 - But the way the different types of collections are compared and swapped is different
