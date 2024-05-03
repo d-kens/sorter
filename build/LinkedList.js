@@ -37,11 +37,11 @@ class LinkedList {
     }
     at(index) {
         if (!this.head) {
-            throw new Error('Index out of bounds. Linked List is empty');
+            throw new Error('Index out of bounds. List is empty');
         }
         let counter = 0;
-        let current = this.head;
-        while (current.next) {
+        let current = this.head; // type annotation -> specify the expected data type of a variable, parametrs and return types
+        while (current) {
             if (counter === index) {
                 return current;
             }
