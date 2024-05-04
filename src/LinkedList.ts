@@ -71,7 +71,6 @@ export class LinkedList {
     }
 
     swap(leftIndex: number, rightIndex: number): void {
-        // This swaps that values only.
         const leftNode = this.at(leftIndex);
         const rightNode = this.at(rightIndex);
 

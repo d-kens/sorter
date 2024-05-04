@@ -1,24 +1,23 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const Sorter_1 = require("./Sorter");
-const CharactersCollection_1 = require("./CharactersCollection");
 const LinkedList_1 = require("./LinkedList");
 // const numbersCollection = new NumbersCollection([100, 3, -5, 0, -1, 43, 122])
 // const sorter = new Sorter(numbersCollection);
 // sorter.sort();
 // console.log(numbersCollection.data );
-const charactersCollection = new CharactersCollection_1.CharactersCollection('OIUYTRWfcvbknjnbvarwthyjuk');
-const sorter = new Sorter_1.Sorter(charactersCollection);
-sorter.sort();
-console.log(charactersCollection);
+// const charactersCollection = new CharactersCollection('OIUYTRWfcvbknjnbvarwthyjuk');
+// const sorter = new Sorter(charactersCollection);
+// sorter.sort();
+// console.log(charactersCollection)
 const linkedList = new LinkedList_1.LinkedList();
-linkedList.add(30);
-linkedList.add(60);
-linkedList.add(40);
-linkedList.add(45);
-console.log(linkedList.length);
-console.log(linkedList.at(3));
-console.log('Finished');
+linkedList.add(500);
+linkedList.add(-10);
+linkedList.add(-3);
+linkedList.add(4);
+const sorter = new Sorter_1.Sorter(linkedList);
+sorter.sort();
+linkedList.print();
 /*
 - The sorter class need to be generic so that it can different types of collections: array of numbers, string of characters, list
 - But the way the different types of collections are compared and swapped is different
