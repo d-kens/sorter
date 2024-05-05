@@ -1,26 +1,25 @@
-import { Sorter } from "./Sorter";
+
 import { NumbersCollection } from "./NumbersCollection";
 import { CharactersCollection } from "./CharactersCollection";
 import { LinkedList } from "./LinkedList";
 
-// const numbersCollection = new NumbersCollection([100, 3, -5, 0, -1, 43, 122])
-// const sorter = new Sorter(numbersCollection);
-// sorter.sort();
-// console.log(numbersCollection.data );
+const numbersCollection = new NumbersCollection([100, 3, -5, 0, -1, 43, 122])
+numbersCollection.sort();
+console.log(numbersCollection.data)
 
-// const charactersCollection = new CharactersCollection('OIUYTRWfcvbknjnbvarwthyjuk');
-// const sorter = new Sorter(charactersCollection);
-// sorter.sort();
-// console.log(charactersCollection)
+const charactersCollection = new CharactersCollection('OIUYTRWfcvbknjnbvarwthyjuk');
+charactersCollection.sort();
+console.log(charactersCollection);
+
 
 const linkedList = new LinkedList();
 linkedList.add(500);
 linkedList.add(-10);
 linkedList.add(-3);
 linkedList.add(4);
+linkedList.add(-100)
 
-const sorter = new Sorter(linkedList);
-sorter.sort();
+linkedList.sort()
 linkedList.print()
 
 
